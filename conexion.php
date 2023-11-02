@@ -37,7 +37,7 @@ $id_usuario = $usuario['id'];
 
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO usuario VALUES (null, '$latitud', '$longitud', '$id_usuario')";
+$sql = "INSERT INTO recorrido VALUES (null, '$latitud', '$longitud', '$id_usuario')";
 mysqli_query($db, $sql);
 
 
