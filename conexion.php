@@ -14,6 +14,8 @@ $db = mysqli_connect($servidor, $usuario, $password, $basededatos);
 
 
 
+
+
 if(mysqli_connect_errno()){
     // echo"la conexion a la base de datos mysql fallo".mysqli_connect_errno();
 }else{
