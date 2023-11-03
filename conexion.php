@@ -1,15 +1,15 @@
 <?php
-$data = json_decode(file_get_contents("php://input"), true);
+// $data = json_decode(file_get_contents("php://input"), true);
 
 // Procesar los datos
-$latitud = $data['latitud'];
-$longitud = $data['longitud'];
-$cod_ard = $data['cod_ard'];
+// $latitud = $data['latitud'];
+// $longitud = $data['longitud'];
+// $cod_ard = $data['cod_ard'];
 
 
-// $latitud = -2.041346;
-// $longitud = -79.995596;
-// $cod_ard = "AR-001";
+$latitud = -2.041346;
+$longitud = -79.995596;
+$cod_ard = "AR-001";
 
 $servidor = 'samperza.com';
 $usuario = 'manuel';
@@ -19,7 +19,8 @@ $db = mysqli_connect($servidor, $usuario, $password, $basededatos);
 
 
 
-
+// Obtiene la fecha actual
+// $fechaActual = date("Y-m-d");
 
 if(mysqli_connect_errno()){
     // echo"la conexion a la base de datos mysql fallo".mysqli_connect_errno();
@@ -42,7 +43,7 @@ $id_usuario = $usuario['id'];
 
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO recorrido VALUES (null, $latitud, $longitud, $id_usuario) ";
+$sql = "INSERT INTO recorrido VALUES (null, $latitud, $longitud, CURDATE(), $id_usuario) ";
 mysqli_query($db, $sql);
 
 

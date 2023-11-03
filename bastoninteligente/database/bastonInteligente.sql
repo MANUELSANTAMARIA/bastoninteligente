@@ -35,6 +35,7 @@ CREATE TABLE recorrido(
     id INT AUTO_INCREMENT NOT NULL,
     latitud DECIMAL(9, 6),
     longitud DECIMAL(9, 6),
+    fecha DATE NOT NULL,
     usuario_id int,
     CONSTRAINT pk_id PRIMARY KEY(id),
     CONSTRAINT fk_recorrido_usuario FOREIGN KEY(usuario_id) REFERENCES usuario(id)
