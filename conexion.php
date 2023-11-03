@@ -6,6 +6,11 @@ $latitud = $data['latitud'];
 $longitud = $data['longitud'];
 $cod_ard = $data['cod_ard'];
 
+
+// $latitud = -2.041346;
+// $longitud = -79.995596;
+// $cod_ard = "AR-001";
+
 $servidor = 'samperza.com';
 $usuario = 'manuel';
 $password = 'joker1234';
@@ -25,7 +30,7 @@ if(mysqli_connect_errno()){
 // $sql = "SELECT * FROM usuario; ";
 // $resultado = mysqli_query($db, $sql);
 
-$sql = "SELECT * FROM usuario WHERE cod_arduino = $cod_ard ";
+$sql = "SELECT * FROM usuario WHERE cod_arduino = '$cod_ard' ";
 $query = mysqli_query($db, $sql);
 
 
@@ -37,7 +42,7 @@ $id_usuario = $usuario['id'];
 
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO recorrido VALUES (null, '$latitud', '$longitud', '$id_usuario')";
+$sql = "INSERT INTO recorrido VALUES (null, $latitud, $longitud, $id_usuario) ";
 mysqli_query($db, $sql);
 
 
