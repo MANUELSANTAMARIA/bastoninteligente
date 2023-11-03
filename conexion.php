@@ -1,19 +1,19 @@
 <?php
-// $data = json_decode(file_get_contents("php://input"), true);
+$data = json_decode(file_get_contents("php://input"), true);
 
 // Procesar los datos
-// $latitud = $data['latitud'];
-// $longitud = $data['longitud'];
-// $cod_ard = $data['cod_ard'];
+$latitud = $data['latitud'];
+$longitud = $data['longitud'];
+$cod_ard = $data['cod_ard'];
 
 
-$latitud = -2.041346;
-$longitud = -79.995596;
-$cod_ard = "AR-001";
+// $latitud = -2.041346;
+// $longitud = -79.995596;
+// $cod_ard = "AR-001";
 
 $servidor = 'samperza.com';
-$usuario = 'manuel';
-$password = 'joker1234';
+$usuario = 'Martin';
+$password = 'Martin123$';
 $basededatos = 'bastonInteligente';
 $db = mysqli_connect($servidor, $usuario, $password, $basededatos);
 
