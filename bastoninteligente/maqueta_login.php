@@ -1,5 +1,3 @@
-<?php include_once 'includes/conexion.php'; ?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,21 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="https://kit.fontawesome.com/49cfec982f.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
 <body>
     <div class="logo">
         <img src="assets/img/s.jpg" alt="mi fondo" class="avatar">
         <h1>Login</h1>
-        
-        <?php if(isset($_SESSION['error_login'])): ?>
-			<div class="alerta alerta-error">
-				<?=$_SESSION['error_login'];?>
-			</div>
-	    <?php endif; ?>
         <!-- include  cuantas veces seas -->
         <form action="login.php" method="POST">
+            
             <!-- user name -->
             <label for="username"><i class="fa-solid fa-user"></i> Email</label>
             <input type="text" placeholder="Ingresar Usuario" name="email">

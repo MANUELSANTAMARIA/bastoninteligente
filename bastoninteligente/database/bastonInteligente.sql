@@ -22,6 +22,7 @@ CREATE TABLE usuario(
     edad DATE NOT NULL,
     sexo_us varchar(50) NOT NULL,
     email_us varchar(100) NOT NULL,
+    contrasena VARCHAR(150) NOT NULL,
     mod_ar_id int(255) NOT NULL,
     CONSTRAINT pk_usuario PRIMARY KEY(id),
     CONSTRAINT uq_cod_arduino_us UNIQUE(cod_arduino),
@@ -29,7 +30,9 @@ CREATE TABLE usuario(
 )ENGINE=InnoDb;
 
 
-INSERT INTO usuario VALUES(NULL, "AR-001", "MARTIN", "SANTAMARIA", "2006-09-21", "HOMBRE", "santa@santa.com", 1)
+
+
+INSERT INTO usuario VALUES(NULL, "AR-001", "MARTIN", "SANTAMARIA", "2006-09-21", "HOMBRE", "santa@santa.com", "$2y$04$OIOvro/xD/zCmvCibuhSDu1oeRrj9EkmdDhUIsyT70y...", 1)
 
 CREATE TABLE recorrido(
     id INT AUTO_INCREMENT NOT NULL,

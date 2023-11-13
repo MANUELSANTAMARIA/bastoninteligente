@@ -1,0 +1,207 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* altura maxima del dispositivo */
+    height: 100vh;
+    text-decoration: none !important;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+
+#redessociales{
+    margin-top: 0px;
+    width: 100%;
+    /* poner color de fondo*/
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e 100%);
+    color: white;
+    overflow: hidden;
+}
+
+#redessociales ul{
+    list-style: none;
+}
+
+#redessociales ul li{
+    float: left;
+    line-height: 44px;
+}
+
+
+#redessociales ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    color: #f0f0f0;
+
+}
+
+#redessociales ul li a:hover{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+    color: #0f0c29;
+}
+
+#logo{
+    margin-left: 20px;
+    float: left;
+    width: 800px;
+    height: 110px;
+}
+
+#logo a{
+    font-family: "fajala", Helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: linear-gradient(to bottom, #0f0c29, #302b63, #24243e 100%);
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 90px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+#menu__ajustes{
+    display: inline-flex;
+    position: absolute;
+    width: 30%;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-end; /* Esto alinea el contenido a la derecha */
+}
+
+
+#menu__ajustes .dropdown-content{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%; /* Coloca el menú debajo del botón */
+    min-width: 160px; /* Establece un ancho mínimo para el menú */
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e 100%);
+}
+
+
+/* Estilos para mostrar el menú cuando está abierto */
+#menu__ajustes .show-dropdown {
+    display: block;
+}
+
+
+/* estilo de los a en menu en el menu__ajuste */
+#menu__ajustes .dropdown-content a,
+#menu__ajustes .dropdown-content button {
+  text-decoration: none;
+  color: white;
+  display: block;
+  border-bottom: 1px solid #ddd; /*Agrega una línea inferior a los enlaces*/
+  transition: border-color 0.3s; /* Agrega una transición suave para la línea inferior */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e 100%);
+
+}
+
+
+#menu__ajustes .dropdown-content a:hover,
+#menu__ajustes .dropdown-content button:hover{
+  background: linear-gradient(to bottom, #3d3a67, #5e599a, #4d4a7f 100%);
+ 
+  cursor: pointer;
+}
+
+#menu__ajustes p{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5e599a;
+  }
+
+/* CONTENIDO*/
+
+#contenedor{
+    width: 85%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, #3d3a67, #5e599a, #4d4a7f 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    text-shadow: 1px 1px 2px #ccc;
+    padding-bottom: 10px; 
+
+    
+}
+
+/* FORM */
+
+label,
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+textarea,
+select{
+    display: block;
+    width: 95%;
+    margin-top:2px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+textarea,
+select{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="button"],
+input[type="submit"]{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    display: block;
+    border-radius: 2px;
+    color:white;
+    background: #007ee5;
+    border: 1px solid #156785;
+    cursor:pointer;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto; /* Establece margen izquierdo y derecho a "auto" para centrar horizontalmente */
+}
+
+
+/* alertas  */
+.alerta{
+    text-align: center;
+    width: 96%;
+    margin-left: 10px;
+    height: 20px;
+    border-radius: 10px;
+}
+.alerta-error{
+    background: rgb(235, 173, 173);
+    color: #f51b1b;
+    
+}
+
+.alerta-exito{
+    background: rgb(126, 238, 126);
+    color: #2f3b2f;
+}
+
