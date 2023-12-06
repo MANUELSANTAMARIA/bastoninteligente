@@ -35,6 +35,7 @@
             <a href="inicio.php" class="boton">Inicio</a>
 		    <a href="crear-usuario.php" class="boton">Crear usuario</a>
             <a href="crear-modelo-arduino.php" class="boton">Crear modelo arduino</a>
+            <a href="https://samperza.com/shiny/bastoninteligente/" class="boton" target="_blank">Dashboard</a>
             <a href="cerrar.php" class="boton">Cerrar</a>
            </div>
         </div>
